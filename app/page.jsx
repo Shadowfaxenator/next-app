@@ -1,7 +1,7 @@
 export const dynamic = 'force-dynamic'
 
 const getPeople = async () =>{
-    const res = await fetch("https://swapi.dev/api/people")
+    const res = await fetch("http://worldtimeapi.org/api/timezone/Asia/Nicosia")
     console.log("query")
 
     return await res.json()
@@ -12,7 +12,7 @@ const getPeople = async () =>{
 export default async function IndexPage() {
     const people = await getPeople()
     return (
-    <><ul>{people.results.map(p=><li>{p.name}</li>)}
+    <><ul>{people.unixtime}
     </ul>
     </>)
 }
