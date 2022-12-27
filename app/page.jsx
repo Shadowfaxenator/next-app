@@ -1,5 +1,5 @@
 const getPeople = async () =>{
-    const res = await fetch("https://swapi.dev/api/people")
+    const res = await fetch("https://swapi.dev/api/people",{ cache: 'no-store' })
     console.log("query")
 
     return await res.json()
