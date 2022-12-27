@@ -1,5 +1,7 @@
+export const dynamic = 'force-dynamic'
+
 const getPeople = async () =>{
-    const res = await fetch("https://swapi.dev/api/people",{ cache: 'no-store' })
+    const res = await fetch("https://swapi.dev/api/people")
     console.log("query")
 
     return await res.json()
