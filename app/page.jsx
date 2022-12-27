@@ -1,4 +1,4 @@
-export const dynamic = 'force-dynamic'
+//export const dynamic = 'force-dynamic'
 
 const getPeople = async () =>{
     const res = await fetch("http://worldtimeapi.org/api/timezone/Asia/Nicosia")
