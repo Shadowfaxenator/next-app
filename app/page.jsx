@@ -5,8 +5,7 @@ const getPeople = async () =>{
     console.log("query")
 
     return await res.json()
-      
-
+      //df
 }
 
 export default async function IndexPage() {
