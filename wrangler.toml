@@ -1,0 +1,4 @@
+# Opt into backwards-incompatible changes through September 14, 2021.
+compatibility_date = "2022-12-28"
+# Also opt into an upcoming fix to the FormData API.
+compatibility_flags = ["transformstream_enable_standard_constructor","streams_enable_constructors"]

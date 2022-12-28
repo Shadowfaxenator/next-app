@@ -2,9 +2,9 @@
 const nextConfig = {
   experimental: {
     appDir: true,
-        runtime: 'experimental-edge',
+        runtime: 'edge',
       },
-  reactStrictMode: true,
+  reactStrictMode: false,
 }
 
 module.exports = nextConfig

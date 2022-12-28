@@ -1,17 +1,15 @@
 //export const dynamic = 'force-dynamic'
-
-const getPeople = async () =>{
-    const res = await fetch("http://worldtimeapi.org/api/timezone/Asia/Nicosia")
-    console.log("query")
-
-    return await res.json()
-      //df
-}
+import {Suspense} from 'react'
+import People from './people'
 
 export default async function IndexPage() {
-    const people = await getPeople()
     return (
-    <><ul>{people.unixtime}
-    </ul>
+    <>
+    <h1>rtyouio</h1>
+
+    <Suspense fallback={<div>Loading....</div>}>
+        <People></People>
+    </Suspense>
+
     </>)
 }
